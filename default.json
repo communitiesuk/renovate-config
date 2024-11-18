@@ -8,6 +8,8 @@
   "pre-commit": {
     "enabled": true
   },
+  "prConcurrentLimit": 4,
+  "prHourlyLimit": 2,
   "packageRules": [
     {
       "groupName": "Ruff updates",
