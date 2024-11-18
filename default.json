@@ -3,6 +3,8 @@
   "extends": [
     "config:best-practices"
   ],
+  "timezone": "Europe/London",
+  "schedule": ["at 9:00 on Monday", "at 9:00 on Tuesday", "at 9:00 on Wednesday", "at 9:00 on Thursday", "at 9:00 on Friday"],
   "pre-commit": {
     "enabled": true
   },
