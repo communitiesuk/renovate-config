@@ -16,6 +16,7 @@
       "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
       "matchManagers": ["pep621", "pre-commit"]
     }
-  ]
+  ],
+  "rangeStrategy": "pin"
 }
 
