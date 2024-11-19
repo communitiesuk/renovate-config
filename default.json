@@ -15,6 +15,11 @@
       "groupName": "Ruff updates",
       "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
       "matchManagers": ["pep621", "pre-commit"]
+    },
+    {
+      "groupName": "Pre-commit updates",
+      "matchPackageNames": ["!astral-sh/ruff-pre-commit"],
+      "matchManagers": ["pre-commit"]
     }
   ],
   "rangeStrategy": "pin"
