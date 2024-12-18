@@ -20,6 +20,10 @@
       "groupName": "Pre-commit updates",
       "matchPackageNames": ["!astral-sh/ruff-pre-commit"],
       "matchManagers": ["pre-commit"]
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "pinDigests": false
     }
   ],
   "rangeStrategy": "pin"
