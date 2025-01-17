@@ -17,6 +17,11 @@
       "matchManagers": ["pep621", "pre-commit"]
     },
     {
+      "groupName": "Type hinting packages",
+      "matchPackageNames": ["types-*", "*-stubs"],
+      "matchManagers": ["pep621""]
+    },
+    {
       "groupName": "Pre-commit updates",
       "matchPackageNames": ["!astral-sh/ruff-pre-commit"],
       "matchManagers": ["pre-commit"]
