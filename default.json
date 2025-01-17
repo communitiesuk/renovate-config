@@ -22,6 +22,11 @@
       "matchManagers": ["pep621"]
     },
     {
+      "groupName": "Python dev dependencies",
+      "matchDepTypes": ["devDependencies"],
+      "matchManagers": ["pep621"]
+    },
+    {
       "groupName": "Pre-commit updates",
       "matchPackageNames": ["!astral-sh/ruff-pre-commit"],
       "matchManagers": ["pre-commit"]
