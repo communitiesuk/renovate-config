@@ -19,7 +19,7 @@
     {
       "groupName": "Type hinting packages",
       "matchPackageNames": ["types-*", "*-stubs"],
-      "matchManagers": ["pep621""]
+      "matchManagers": ["pep621"]
     },
     {
       "groupName": "Pre-commit updates",
