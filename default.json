@@ -24,6 +24,7 @@
     {
       "groupName": "Python dev dependencies",
       "matchDepTypes": ["devDependencies"],
+      "autoMerge": true,
       "matchManagers": ["pep621"]
     },
     {
