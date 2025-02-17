@@ -22,6 +22,12 @@
       "matchManagers": ["pep621"]
     },
     {
+      "matchPackageNames": ["boto3"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "autoMerge": true,
+      "matchManagers": ["pep621"]
+    },
+    {
       "groupName": "Python dev dependencies",
       "matchDepTypes": ["devDependencies"],
       "autoMerge": true,
