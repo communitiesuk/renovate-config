@@ -14,11 +14,13 @@
     {
       "groupName": "Ruff updates",
       "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
+      "autoMerge": true,
       "matchManagers": ["pep621", "pre-commit"]
     },
     {
       "groupName": "Type hinting packages",
       "matchPackageNames": ["types-*", "*-stubs"],
+      "autoMerge": true,
       "matchManagers": ["pep621"]
     },
     {
@@ -36,10 +38,12 @@
     {
       "groupName": "Pre-commit updates",
       "matchPackageNames": ["!astral-sh/ruff-pre-commit"],
+      "autoMerge": true,
       "matchManagers": ["pre-commit"]
     },
     {
       "matchManagers": ["dockerfile"],
+      "autoMerge": true,
       "pinDigests": false
     }
   ],
