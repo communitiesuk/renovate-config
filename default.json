@@ -32,6 +32,7 @@
     {
       "groupName": "Python dev dependencies",
       "matchDepTypes": ["project.optional-dependencies", "dependency-groups"],
+      "matchPackageNames": ["!ruff"],
       "automerge": true,
       "matchManagers": ["pep621"]
     },
