@@ -12,6 +12,13 @@
   "prHourlyLimit": 4,
   "packageRules": [
     {
+      "groupName": "Python",
+      "matchPackageNames": ["python"],
+      "prBodyNotes": [
+        "## Notice for developers\n\nYou may need to manually update the minimum version of `uv` required to ensure that it can install this new Python version. Update `[tool.uv]`'s `required-version` line.",
+      ]
+    },
+    {
       "groupName": "Ruff updates",
       "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
       "automerge": true,
