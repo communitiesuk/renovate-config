@@ -13,7 +13,7 @@
   "packageRules": [
     {
       "groupName": "Python",
-      "matchPackageNames": ["python"],
+      "matchPackageNames": ["python", "actions/python-versions"],
       "prBodyNotes": [
         "## Notice for developers\n\nYou may need to manually update the minimum version of `uv` required to ensure that it can install this new Python version. Update `[tool.uv]`'s `required-version` line."
       ]
