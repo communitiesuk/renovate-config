@@ -19,7 +19,7 @@
       ]
     },
     {
-      "groupName": "Ruff updates",
+      "groupName": "Ruff",
       "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
       "automerge": true,
       "matchManagers": ["pep621", "pre-commit"]
