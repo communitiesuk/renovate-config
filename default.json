@@ -4,12 +4,12 @@
     "config:best-practices"
   ],
   "timezone": "Europe/London",
-  "schedule": ["before 9am every weekday"],
+  "schedule": ["every Monday"],
   "pre-commit": {
     "enabled": true
   },
-  "prConcurrentLimit": 2,
-  "prHourlyLimit": 4,
+  "prConcurrentLimit": 3,
+  "prHourlyLimit": 8,
   "packageRules": [
     {
       "groupName": "Python",
