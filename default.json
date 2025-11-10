@@ -12,6 +12,20 @@
   "prHourlyLimit": 8,
   "packageRules": [
     {
+      "groupName": "Python dependencies patch updates",
+      "matchManagers": ["pep621"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "Python dependencies minor updates",
+      "matchManagers": ["pep621"],
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["minor"],
+      "automerge": false
+    },
+    {
       "groupName": "Python",
       "matchPackageNames": ["python", "actions/python-versions"],
       "prBodyNotes": [
