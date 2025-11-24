@@ -12,6 +12,18 @@
   "prHourlyLimit": 8,
   "packageRules": [
     {
+      "groupName": "Ruff",
+      "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
+      "automerge": true,
+      "matchManagers": ["pep621", "pre-commit"]
+    },
+    {
+      "groupName": "import-linter",
+      "matchPackageNames": ["import-linter", "seddonym/import-linter"],
+      "automerge": true,
+      "matchManagers": ["pep621", "pre-commit"]
+    },
+    {
       "groupName": "Python dependencies patch updates",
       "matchManagers": ["pep621"],
       "matchUpdateTypes": ["patch"],
@@ -29,18 +41,6 @@
       "prBodyNotes": [
         "## Notice for developers\n\nYou may need to manually update the minimum version of `uv` required to ensure that it can install this new Python version. Update `[tool.uv]`'s `required-version` line."
       ]
-    },
-    {
-      "groupName": "Ruff",
-      "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
-      "automerge": true,
-      "matchManagers": ["pep621", "pre-commit"]
-    },
-    {
-      "groupName": "import-linter",
-      "matchPackageNames": ["import-linter", "seddonym/import-linter"],
-      "automerge": true,
-      "matchManagers": ["pep621", "pre-commit"]
     },
     {
       "groupName": "Type hinting packages",
