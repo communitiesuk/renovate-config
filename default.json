@@ -37,6 +37,12 @@
       "matchManagers": ["pep621", "pre-commit"]
     },
     {
+      "groupName": "import-linter",
+      "matchPackageNames": ["import-linter", "seddonym/import-linter"],
+      "automerge": true,
+      "matchManagers": ["pep621", "pre-commit"]
+    },
+    {
       "groupName": "Type hinting packages",
       "matchPackageNames": ["types-*", "*-stubs"],
       "automerge": true,
