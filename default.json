@@ -12,6 +12,9 @@
   "prHourlyLimit": 8,
   "packageRules": [
     {
+      "digest": {"enabled": false}
+    },
+    {
       "groupName": "Ruff",
       "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
       "automerge": true,
