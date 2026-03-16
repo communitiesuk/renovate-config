@@ -74,6 +74,18 @@
       "matchManagers": ["dockerfile"],
       "automerge": true,
       "pinDigests": false
+    },
+    {
+      "groupName": "GOV.UK Frontend",
+      "matchManagers": ["pep621", "npm"],
+      "matchPackageNames": ["govuk-frontend-jinja", "govuk-frontend"],
+      "prBodyNotes": [
+        "## Notice for developers\n\nPython's `govuk-frontend-jinja` package and the JavaScript package `govuk-frontend` need to be bumped together and kept aligned according to this [Compatibility table](https://github.com/LandRegistry/govuk-frontend-jinja?tab=readme-ov-file#compatibility). Note that if you use xgovuk-flask-admin this may also need to be upgraded at the same time. You must manually work out what versions we should upgrade to, and should not rely on Renovate to get it correct (this PR exists as a reminder to keep these dependencies up-to-date, but unlike other PRs, manual work is required.",
+        "### Design/product review may be required\n\nMinor and major version bumps of GOV.UK Frontend should only be accepted in collaboration with design and a detailed review of how changes will affect the service."
+      ],
+      "major": {
+        "dependencyDashboardApproval": true
+      }
     }
   ],
   "rangeStrategy": "pin"
