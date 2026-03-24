@@ -52,7 +52,7 @@
       "matchManagers": ["pep621"]
     },
     {
-      "matchPackageNames": ["boto3"],
+      "matchPackageNames": ["boto3", "types-boto3"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "matchManagers": ["pep621"]
