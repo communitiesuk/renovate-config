@@ -15,12 +15,6 @@
       "digest": {"enabled": false}
     },
     {
-      "groupName": "Ruff",
-      "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
-      "automerge": true,
-      "matchManagers": ["pep621", "pre-commit"]
-    },
-    {
       "groupName": "import-linter",
       "matchPackageNames": ["import-linter", "seddonym/import-linter"],
       "automerge": true,
@@ -61,6 +55,18 @@
       "groupName": "Python dev dependencies",
       "matchDepTypes": ["project.optional-dependencies", "dependency-groups"],
       "matchPackageNames": ["!ruff"],
+      "automerge": true,
+      "matchManagers": ["pep621"]
+    },
+    {
+      "groupName": "Ruff",
+      "matchPackageNames": ["ruff", "astral-sh/ruff-pre-commit"],
+      "automerge": true,
+      "matchManagers": ["pep621", "pre-commit"]
+    },
+    {
+      "groupName": "X-GOV.UK Flask Admin",
+      "matchPackageNames": ["xgovuk-flask-admin"],
       "automerge": true,
       "matchManagers": ["pep621"]
     },
